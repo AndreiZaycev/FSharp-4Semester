@@ -33,9 +33,6 @@ type ArithmeticTree =
     | Leaf of int
     | Node of Operations * ArithmeticTree * ArithmeticTree
 
-let arithmeticTree1 =
-    Node(Sum, Leaf 5, Node(Multiply, Leaf 3, Leaf 2))
-
 let rec evaluateExpression tree =
     match tree with
     | Node (operation, left, right) ->
@@ -60,7 +57,6 @@ let primeGenerator =
 
         while true do
             if isPrime counter then
-                printfn "%A" counter
                 yield counter
 
             counter <- counter + 1
