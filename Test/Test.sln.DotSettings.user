@@ -1,0 +1,28 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=61f7f84c_002D3010_002D44aa_002D9739_002D56ae2c42e990/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="HashMapTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F75A7FE8-836D-41AC-847B-ED33D6513FBF::net6.0::Testings.HashMapTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7939c777_002Da594_002D4063_002D9c71_002Dd3f908957e04/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestMinimum" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F75A7FE8-836D-41AC-847B-ED33D6513FBF::net6.0::Testings.TestMinimum&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9586f1c0_002Dc826_002D441d_002Da4a2_002Dd4a587cd4f2d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestMinimum #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F75A7FE8-836D-41AC-847B-ED33D6513FBF::net6.0::Testings.TestMinimum&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b30a36d8_002D6c66_002D4950_002D8189_002Dfdf3ae584e78/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestMinimum #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F75A7FE8-836D-41AC-847B-ED33D6513FBF::net6.0::Testings.TestMinimum&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=bc35eddd_002D4e71_002D4387_002Da33f_002Df91a3ed338eb/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestMinimum #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F75A7FE8-836D-41AC-847B-ED33D6513FBF::net6.0::Testings.TestMinimum&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F75A7FE8-836D-41AC-847B-ED33D6513FBF::net6.0::Testings.TestBinaryTreeTraverse&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F75A7FE8-836D-41AC-847B-ED33D6513FBF::net6.0::Testings.HashMapTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
