@@ -1,9 +1,9 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4dd11642_002De280_002D4dd3_002Da524_002D6bd8324157ca/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestAddNumberAndGet #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4dd11642_002De280_002D4dd3_002Da524_002D6bd8324157ca/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestAddNumberAndGet #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::9653649C-094B-4E1F-9B5C-C6E0014DF54F::net6.0::PhonebookTests.TestAddNumberAndGet&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=dce4d3a1_002Dd858_002D4dc6_002Dbd7e_002D73eee692ada1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TestAddNumberAndGet" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;ProjectFile&gt;9653649C-094B-4E1F-9B5C-C6E0014DF54F/f:UnitTest1.fs&lt;/ProjectFile&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=dce4d3a1_002Dd858_002D4dc6_002Dbd7e_002D73eee692ada1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestAddNumberAndGet" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;ProjectFile&gt;9653649C-094B-4E1F-9B5C-C6E0014DF54F/f:PhoneBookTests.fs&lt;/ProjectFile&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

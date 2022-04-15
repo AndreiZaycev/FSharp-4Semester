@@ -1,7 +1,6 @@
 module PhonebookTests
 
 open NUnit.Framework
-open FsCheck
 open FsUnit
 open Program
 
