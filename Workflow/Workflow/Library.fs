@@ -1,6 +1,6 @@
 ﻿module Workflow
 
-/// rounding build for operations with given round accuracy
+/// rounding builder for operations with given round accuracy
 type RoundingBuilder(accuracy : int) =
     member this.Bind (x : float, f) = (x, accuracy) |> System.Math.Round |> f
     member this.Return (x : float) = System.Math.Round (x, accuracy)
