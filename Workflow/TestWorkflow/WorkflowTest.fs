@@ -1,5 +1,6 @@
 module TestWorkflow
 
+open System
 open NUnit.Framework
 open Workflow
 open FsUnit
@@ -16,6 +17,16 @@ let testRound3 () =
         }
 
     res |> should equal 0.048
+    
+[<Test>]
+let testRoundNegative() =
+    let rounding = RoundingBuilder(-1)
+
+    (fun () ->
+        rounding {
+            let! a = 1.5
+            return a;
+        } |> ignore) |> should throw typeof<ArgumentOutOfRangeException>
 
 [<Test>]
 let testForCalculate3 () =
