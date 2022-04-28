@@ -3,13 +3,14 @@ open System.Net.Http
 open System.Text.RegularExpressions
 
 /// Returns the size of the pages
-let downloadAsync (url: string) =
+let download (url: string) =
     let regex = Regex("<a href=\"(https://[^\"]+)\">", RegexOptions.Compiled)
     
     let downloadPageAsync (_url: string) =
+        let httpClient = new HttpClient()
         async {
             try
-                use client = new HttpClient()
+                use client = httpClient
                 let! string = Async.AwaitTask (client.GetStringAsync(_url))
                 return Some string
             with
@@ -22,7 +23,7 @@ let downloadAsync (url: string) =
     | Some page ->
         let matchedPages = regex.Matches(page)
         [ for m in matchedPages -> downloadPageAsync m.Groups.[1].Value ]
-        |> Async.Parallel |> Async.RunSynchronously |> Seq.distinct 
+        |> Async.Parallel |> Async.RunSynchronously 
         |> Seq.zip [for m in matchedPages -> m.Groups.[1].Value ]
         |> Seq.map (fun (url, x) ->
             match x with
@@ -32,9 +33,8 @@ let downloadAsync (url: string) =
 
 /// Gets the result to print 
 let getDownloadedInfoToPrint url =
-    let parsedPages = downloadAsync url
-    Seq.map (fun (parsedPage: string * int option) -> 
-        match parsedPage with
+    let parsedPages = download url
+    Seq.map (function
         | url, Some x -> $"%s{url} - %d{x} symbols"
         | _, None -> "Cannot download page") parsedPages
 
