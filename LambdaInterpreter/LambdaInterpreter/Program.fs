@@ -2,10 +2,10 @@ module LambdaInterpreter
 
 
 /// Expression type 
-type Expression = 
+type Term = 
     | Variable of string
-    | Application of Expression * Expression
-    | Abstraction of string * Expression
+    | Application of Term * Term
+    | Abstraction of string * Term
 
 /// Apply beta reduction 
 let rec reduce exp =   
@@ -37,19 +37,18 @@ let rec reduce exp =
             Abstraction(name, substitution variable term (substitution x (Variable name) e))
         | Application(l, r) -> Application(substitution variable term l, substitution variable term r)
 
-    /// Apply reduce
-    let rec red exp =
-        match exp with
-        | Application(l, r) ->
-            match red l with
-            | Abstraction(x, e) -> substitution x r e
-            | x -> Application(x, r)
-        | _ -> exp
-
     match exp with
     | Variable _ -> exp
     | Application(l, r) ->
+        /// Apply reduce
+        let rec red exp =
+            match exp with
+            | Application(l, r) ->
+                match red l with
+                | Abstraction(x, e) -> substitution x r e
+                | x -> Application(x, r)
+            | _ -> exp
         match red l with
-        | Abstraction(x, e) -> reduce <| substitution x r e
+        | Abstraction(x, e) -> reduce (substitution x r e)
         | x -> Application(reduce x, reduce r)
     | Abstraction(v, e) -> Abstraction(v, reduce e)
