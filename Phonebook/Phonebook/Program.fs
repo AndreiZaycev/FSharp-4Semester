@@ -1,19 +1,32 @@
-module Program
+module Program 
 open System.Collections.Generic
+open Microsoft.FSharp.Collections
 
-type Phonebook(records: List<string * int>) =
-    member this.Records with get () = records
+type Phonebook(records: seq<string * int>) =
+    let mutable record = records 
+    member this.Records
+        with get () = record
+        and set(value) = record <- value 
     
-    new () = Phonebook (List<string * int>())
+    new () = Phonebook (Seq.empty)
     
     /// Finds by name number in phonebook
-    member this.FindByName name = Seq.find (fun (key, value) -> key = name) this.Records |> snd 
+    member this.FindByName name =
+        let a = Seq.map snd (Seq.filter (fun (key, _) -> key = name) this.Records)
+        if Seq.isEmpty a
+        then "Person with this name is not found"
+        else (Seq.head a).ToString() 
 
     /// Finds by number user in phonebook
-    member this.FindByNumber number = Seq.find (fun (key, value) -> value = number) this.Records |> fst
+    member this.FindByNumber number =
+        let a = Seq.map fst (Seq.filter (fun (_, value) -> value = number) this.Records)
+        if Seq.isEmpty a
+        then "Person with this number is not found"
+        else Seq.head a 
+       
 
     /// Adds record to a phonebook
-    member this.Add name number = this.Records.Add (name, number)
+    member this.Add name number = this.Records <- Seq.append this.Records [(name, number)]
 
     /// Get phonebook from specified file 
     member this.FromFile path =
