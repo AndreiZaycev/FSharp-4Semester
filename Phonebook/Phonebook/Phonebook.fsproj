@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <OutputType>Exe</OutputType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Program.fs" />
+        <Compile Include="Main.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Argu" Version="6.1.1" />
+      <PackageReference Include="FsCheck" Version="2.16.4" />
+      <PackageReference Include="FsUnit" Version="5.0.0" />
+    </ItemGroup>
+
+</Project>
