@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "LambdaInterpreter", "LambdaInterpreter\LambdaInterpreter.fsproj", "{C8ECB04E-4D8D-4710-A857-E8E52F4F2FDE}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "InterpreterTests", "InterpreterTests\InterpreterTests.fsproj", "{E7B9CD7A-C162-4A25-A8F5-33AA712DA120}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8ECB04E-4D8D-4710-A857-E8E52F4F2FDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8ECB04E-4D8D-4710-A857-E8E52F4F2FDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8ECB04E-4D8D-4710-A857-E8E52F4F2FDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8ECB04E-4D8D-4710-A857-E8E52F4F2FDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7B9CD7A-C162-4A25-A8F5-33AA712DA120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7B9CD7A-C162-4A25-A8F5-33AA712DA120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7B9CD7A-C162-4A25-A8F5-33AA712DA120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7B9CD7A-C162-4A25-A8F5-33AA712DA120}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
