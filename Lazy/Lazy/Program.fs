@@ -19,6 +19,7 @@ type SingleThreadedLazy<'a>(supplier: unit -> 'a) =
 /// ConcurrentLazy that implements ILazy
 type ConcurrentLazy<'a>(supplier: unit -> 'a) =
     let locker = obj ()
+    [<VolatileField>]
     let mutable result = None
 
     interface ILazy<'a> with
@@ -34,6 +35,7 @@ type ConcurrentLazy<'a>(supplier: unit -> 'a) =
 
 /// LockFreeLazy that implements ILazy
 type LockFreeLazy<'a>(supplier: unit -> 'a) =
+    [<VolatileField>]
     let mutable result = None
 
     interface ILazy<'a> with
