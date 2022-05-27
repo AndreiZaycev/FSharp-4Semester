@@ -35,7 +35,6 @@ type ConcurrentLazy<'a>(supplier: unit -> 'a) =
 
 /// LockFreeLazy that implements ILazy
 type LockFreeLazy<'a>(supplier: unit -> 'a) =
-    [<VolatileField>]
     let mutable result = None
 
     interface ILazy<'a> with
