@@ -57,7 +57,7 @@ let testThatVirusInfectedAllComputers () =
     virus.InfectedComputers.Count |> should equal 3
     HashSet([|computer1; computer2; computer3|]) |> should equal virus.InfectedComputers
     virus1.InfectedComputers.Count |> should equal 3
-    HashSet([|computer1; computer2; computer3|]) |> should equal virus.InfectedComputers
+    HashSet([|computer2; computer1; computer3|]) |> should equal virus1.InfectedComputers
     
         
     
