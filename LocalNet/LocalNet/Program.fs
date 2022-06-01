@@ -28,7 +28,7 @@ type Virus(firstInfected: Computer[], infectionChance: OS -> float, random: unit
             matrix[indexOfComputer, *]
             |> Array.mapi (fun i hasConnection -> (i, hasConnection))
             |> Array.filter snd
-            |> Array.map (fun (i, hasConnection) -> computers.[i])
+            |> Array.map (fun (i, _) -> computers.[i])
         slice 
     
 

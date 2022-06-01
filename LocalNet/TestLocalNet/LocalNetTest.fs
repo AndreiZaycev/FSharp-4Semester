@@ -3,8 +3,6 @@ module TestLocalNet
 open NUnit.Framework
 open FsUnit
 open LocalNet
-open Foq
-
 
 [<Test>]
 let testWithProbabilities1 () =
