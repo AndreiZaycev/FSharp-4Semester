@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "LocalNet", "LocalNet\LocalNet.fsproj", "{D038CEDD-DE63-45ED-9C75-46DA93A30824}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TestLocalNet", "TestLocalNet\TestLocalNet.fsproj", "{0F172778-6790-4966-AAC2-C1291ACA9511}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D038CEDD-DE63-45ED-9C75-46DA93A30824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D038CEDD-DE63-45ED-9C75-46DA93A30824}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D038CEDD-DE63-45ED-9C75-46DA93A30824}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D038CEDD-DE63-45ED-9C75-46DA93A30824}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F172778-6790-4966-AAC2-C1291ACA9511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F172778-6790-4966-AAC2-C1291ACA9511}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F172778-6790-4966-AAC2-C1291ACA9511}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F172778-6790-4966-AAC2-C1291ACA9511}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

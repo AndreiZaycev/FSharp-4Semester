@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Program.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Foq" Version="1.8.0" />
+      <PackageReference Include="FsCheck" Version="2.16.4" />
+      <PackageReference Include="FsUnit" Version="5.0.0" />
+    </ItemGroup>
+
+</Project>
