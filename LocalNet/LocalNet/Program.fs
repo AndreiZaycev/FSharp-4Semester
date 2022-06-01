@@ -18,7 +18,8 @@ type Computer(name: string, os: OS) =
 /// Решил так сделать, чтобы они явно не передавались в Virus  
 let mutable matrix = Array2D.zeroCreate 0 0 
 let mutable computers = Array.empty
-    
+  
+/// Implementation of Virus that can infects computers   
 type Virus(firstInfected: Computer[], infectionChance: OS -> float, random: unit -> float) =
     let infectedComputers = HashSet(firstInfected)
 
