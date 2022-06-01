@@ -73,5 +73,5 @@ type PlagueInc(comps: Computer[], mtx: bool[,], viruses: Virus[]) =
     member x.Play() =
         computers <- comps
         matrix <- mtx 
-        play viruses 1 
+        play viruses 1
                           
